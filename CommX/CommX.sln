@@ -3,9 +3,28 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35913.81 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_Start", "1_Start", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2_Modules", "2_Modules", "{8D433FA2-5DE0-4148-BC1E-45734A0E6332}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommX", "CommX\CommX.csproj", "{022B4513-9E7C-49BB-8D92-86C4DA0E17D8}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{022B4513-9E7C-49BB-8D92-86C4DA0E17D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{022B4513-9E7C-49BB-8D92-86C4DA0E17D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{022B4513-9E7C-49BB-8D92-86C4DA0E17D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{022B4513-9E7C-49BB-8D92-86C4DA0E17D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{022B4513-9E7C-49BB-8D92-86C4DA0E17D8} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {50B0F728-E134-4E6A-A889-ACAA83D56DCE}
