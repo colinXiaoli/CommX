@@ -1,4 +1,5 @@
-﻿using Prism.Mvvm;
+﻿using Prism.Dialogs;
+using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,5 +10,9 @@ namespace CommX.ViewModels
 {
     public class MainViewModel:BindableBase
     {
+        public MainViewModel(IDialogService dialogService)
+        {
+            dialogService.ShowDialog("TestView");
+        }
     }
 }
