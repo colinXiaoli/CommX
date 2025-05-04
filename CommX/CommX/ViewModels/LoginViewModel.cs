@@ -1,4 +1,6 @@
-﻿using Prism.Dialogs;
+﻿using CommX.Views;
+using Prism.Dialogs;
+using Prism.Ioc;
 using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
@@ -8,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace CommX.ViewModels
 {
-    public class TestViewModel : IDialogAware
+    public class LoginViewModel :IDialogAware
     {
         public string Title { get; set; } = "测试";
 
-        DialogCloseListener IDialogAware.RequestClose { get;}
+        public DialogCloseListener RequestClose { get; set; }
 
         public bool CanCloseDialog()
         {
@@ -27,6 +29,10 @@ namespace CommX.ViewModels
         public void OnDialogOpened(IDialogParameters parameters)
         {
             
+        }
+        public LoginViewModel(IContainerProvider provider)
+        {
+           
         }
     }
 }

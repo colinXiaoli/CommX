@@ -4,8 +4,8 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
-    <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
     <ApplicationManifest></ApplicationManifest>
+    <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
   </PropertyGroup>
 
   <ItemGroup>
@@ -18,23 +18,5 @@
       <IncludeAssets Condition="'$(Configuration)' != 'Debug'">None</IncludeAssets>
       <PrivateAssets Condition="'$(Configuration)' != 'Debug'">All</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="Prism.Avalonia" Version="9.0.401.11110-pre" />
-    <PackageReference Include="Prism.DryIoc.Avalonia" Version="9.0.401.11110-pre" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Models\" />
-    <Folder Include="Base\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\CommX.Assets\CommX.Assets.csproj" />
-    <ProjectReference Include="..\CommX.Theme\CommX.Theme.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="Views\LoginView.axaml.cs">
-      <DependentUpon>LoginView.axaml</DependentUpon>
-    </Compile>
   </ItemGroup>
 </Project>

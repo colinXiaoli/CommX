@@ -23,7 +23,7 @@ namespace CommX
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            containerRegistry.RegisterDialog<TestView,TestViewModel>();
+            containerRegistry.RegisterDialog<LoginView, LoginViewModel>();
         }
     }
 }

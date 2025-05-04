@@ -7,4 +7,7 @@
     <Application.Styles>
 		<SimpleTheme />
     </Application.Styles>
+	<Application.Resources>
+		<FontFamily x:Key="Iconfont">avares://CommX.Assets/Assets/Fonts/iconfont.ttf#iconfont</FontFamily>
+	</Application.Resources>
 </Application>

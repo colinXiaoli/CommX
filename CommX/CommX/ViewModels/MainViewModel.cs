@@ -1,4 +1,5 @@
-﻿using Prism.Dialogs;
+﻿using Prism.Commands;
+using Prism.Dialogs;
 using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
@@ -10,9 +11,16 @@ namespace CommX.ViewModels
 {
     public class MainViewModel:BindableBase
     {
+
+        public DelegateCommand StartDialogCommand { get; set; }
         public MainViewModel(IDialogService dialogService)
         {
-            dialogService.ShowDialog("TestView");
+            StartDialogCommand = new DelegateCommand(StartDialog);
+        }
+
+        private void StartDialog()
+        {
+
         }
     }
 }
